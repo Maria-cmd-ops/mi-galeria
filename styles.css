@@ -1,0 +1,62 @@
+body {  
+    font-family: 'Times new roman', sans-serif; /* Cambia a la fuente deseada */  
+    font-size: 16px; /* Tamaño de fuente ajustable según sea necesario */  
+    color: #333; /* Color del texto, puedes cambiarlo por cualquier color */  
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejorar la legibilidad */  
+    padding: 10px; /* Espaciado alrededor del texto */  
+    border-radius: 5px; /* Bordes redondeados para un aspecto más suave */  
+    text-align: center; /* Centra el texto */  
+    margin-top: 5px; /* Espacio superior entre la imagen y la descripción */    
+}  
+
+header {  
+    background-color: #b5ccda;  
+    color: rgb(32, 60, 142); /* Color azul para el título */  
+    text-align: center;  
+    padding: 20px;  
+}  
+
+.gallery {  
+    display: flex; /* Usa flexbox para alinear horizontalmente */  
+    flex-wrap: wrap; /* Permite que las imágenes se muevan a la siguiente línea si no hay suficiente espacio */  
+    justify-content: center; /* Centra las imágenes en el contenedor */  
+    padding: 20px;  
+}  
+
+figure {  
+    margin: 10px;  
+    border: none;  
+    border-radius: 0;  
+    overflow: hidden;  
+    box-shadow: none;  
+    text-align: center; /* Asegúrate que texto en figcaption esté centrado */  
+    overflow: hidden;
+}  
+
+img:hover {  
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */  
+}  
+
+figcaption {  
+    font-size: 12px; /* Tamaño de fuente pequeño para la descripción */  
+    background-color: #ffff; /* Fondo blanco para la descripción */  
+    padding: 10px;  
+    margin-bottom: 0; /* Sin margen inferior para que esté pegado a la imagen */  
+}  
+ 
+figure:hover figcaption {  
+    display: block; /* Muestra la descripción al pasar el mouse */  
+}  
+
+
+img {  
+    width: 300px; /* Ancho fijo para todas las imágenes */  
+    height: 370px; /* Altura fija para todas las imágenes */  
+    object-fit: cover; /* Para que la imagen cubra el área sin distorsionarse */  
+    display: block; /* Eliminar el espacio extra debajo de la imagen */  
+    object-fit: cover; /* Mantiene la proporción */  
+    transition: transform 0.3s; /* Transición suave */ 
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */  
+}  
+  
